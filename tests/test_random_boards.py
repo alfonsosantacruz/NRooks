@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import numpy as np
 import unittest
 from utils import generate_random_board, check_completed_nrooks_compliant
@@ -10,6 +12,8 @@ sys.path.append(parentdir)
 
 import solver
 
+N = 8
+
 class TestSolution(unittest.TestCase):
     def test_multiple_random_boards(self):
         """
@@ -18,14 +22,13 @@ class TestSolution(unittest.TestCase):
 
         It also prints the initial in solved boards around 50% percent of the time.
         """
-        N = 8
-        
+
         for i in range(N):
-            board = generate_random_board(N, i)
+            board = generate_random_board(i)
             solved_board, status = solver.solve_nrooks(copy.deepcopy(board))
             
             if np.random.random() > 0.5:
-                print(f"Number of rooks in initial board: {i}")
+                print(f"Number of rooks in initial board: {i + 1}")
                 print("Initial board:\n" + solver.print_board(board) + "\n\n")
                 print ("Solved board:\n" + solver.print_board(solved_board) + "\n\n")
 
