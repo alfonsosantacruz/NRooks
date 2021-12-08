@@ -92,32 +92,6 @@ Solving...
 Error: More than one rook in a single row
 ```
 
-##### Example 2:
-
-```
-$ python3 app.py
-
-Submit your board as a list of lists with zeroes and ones, where one represents a rook and zero represents an empty space. Remember that your board should be contained in one line, since zsh might consider it a bad pattern.
-
-[[0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 0, 0, 1, 1]] 
-
-
-Initial board:
-· · · · · · · ·
-· · · · · · · ·
-· · · · · · · ·
-· · · · · · · ·
-· · · · · · · ·
-· · R · · · · ·
-· · · · R · · ·
-· · · · · · R R
-
-Solving...
-
-
-Error: More than one rook in a single row
-```
-
 ##### Example 3:
 
 ```
